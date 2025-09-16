@@ -6,16 +6,6 @@ window.addEventListener("scroll", () => {
     header.classList.remove("shadow-md", "bg-white/90");
   }
 });
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
-
 const form = document.querySelector("form");
 if (form) {
   form.addEventListener("submit", (e) => {
