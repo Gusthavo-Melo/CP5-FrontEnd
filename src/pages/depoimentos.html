@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Poppins] bg-gray-50 text-gray-800">
+    <header class="fixed top-0 w-full bg-white/70 backdrop-blur-lg shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 href="../../index.html" class="text-2xl font-bold text-indigo-600">Melodia</h1>
+            <nav>
+                <ul class="flex gap-6 font-medium">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../pages/beneficios.html" class="hover:text-indigo-600">Benefícios</a></li>
+                    <li><a href="../pages/funcionalidades.html" class="hover:text-indigo-600">Funcionalidades</a></li>
+                    <li><a href="../pages/depoimentos.html" class="hover:text-indigo-600">Depoimentos</a></li>
+                    <li><a href="../pages/contato.html" class="hover:text-indigo-600">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="depoimentos" class="py-16 container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-10">O que dizem nossos usuários</h3>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <p class="italic">"O Melodia mudou minha forma de ouvir música. É incrível!"</p>
+                <div class="flex items-center mt-4">
+                    <img src="./src/images/user1.jpg" alt="Usuário 1" class="w-12 h-12 rounded-full mr-4">
+                    <span class="font-semibold">Ana Souza</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <p class="italic">"Playlists personalizadas que realmente combinam comigo."</p>
+                <div class="flex items-center mt-4">
+                    <img src="./src/images/user2.jpg" alt="Usuário 2" class="w-12 h-12 rounded-full mr-4">
+                    <span class="font-semibold">Carlos Silva</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <p class="italic">"A qualidade de som é fantástica. Sinto cada detalhe da música."</p>
+                <div class="flex items-center mt-4">
+                    <img src="./src/images/user3.jpg" alt="Usuário 3" class="w-12 h-12 rounded-full mr-4">
+                    <span class="font-semibold">Mariana Lima</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <p class="italic">"Adoro poder ouvir offline durante minhas viagens!"</p>
+                <div class="flex items-center mt-4">
+                    <img src="./src/images/user4.jpg" alt="Usuário 4" class="w-12 h-12 rounded-full mr-4">
+                    <span class="font-semibold">João Pedro</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <p>&copy; 2025 Melodia | Todos os direitos reservados</p>
+        <div class="flex justify-center space-x-6 mt-3">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <a class="block mt-3 text-sm hover:text-white">Política de Privacidade</a>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
