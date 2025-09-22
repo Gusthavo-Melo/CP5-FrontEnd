@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodia - Playlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Poppins] bg-gray-50 text-gray-800">
+    <header class="fixed top-0 w-full bg-white/70 backdrop-blur-lg shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1><a href="../../index.html" class="text-2xl font-bold text-indigo-600">Melodia</a></h1> 
+            <nav>
+                <ul class="flex gap-6 font-medium">
+                    <li><a href="../../index.html" class="font-bold hover:text-indigo-600">Home</a></li>
+                    <li><a href="../pages/beneficios.html" class="font-bold hover:text-indigo-600">Benefícios</a></li>
+                    <li><a href="../pages/funcionalidades.html"
+                            class="font-bold hover:text-indigo-600">Funcionalidades</a></li>
+                    <li><a href="../pages/depoimentos.html" class="font-bold hover:text-indigo-600">Depoimentos</a></li>
+                    <li><a href="../pages/contato.html" class="font-bold hover:text-indigo-600">Contato</a></li>
+                    <li><a href="../pages/playlist.html" class="font-bold hover:text-indigo-600">Músicas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="container mx-auto p-6">
+            <!-- Lista de músicas disponíveis -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">Músicas disponíveis</h2>
+                <ul id="music-list" class="grid md:grid-cols-2 gap-6">
+                    <!-- Cada item terá botão "Adicionar" -->
+                </ul>
+            </section>
+
+            <hr class="my-8">
+
+            <!-- Playlist -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">Sua Playlist</h2>
+                <div id="playlist" class="space-y-6">
+                    <p class="text-gray-500">Nenhuma música adicionada ainda.</p>
+                </div>
+            </section>
+        </main>
+
+        <script src="../js/script.js"></script>
+
+</html>
