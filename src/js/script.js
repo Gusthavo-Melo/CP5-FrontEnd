@@ -1,9 +1,12 @@
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
+
   if (window.scrollY > 50) {
-    header.classList.add("shadow-md", "bg-white/90");
+    header.classList.add("bg-white/90", "backdrop-blur", "shadow-md");
+    header.classList.remove("bg-white/70");
   } else {
-    header.classList.remove("shadow-md", "bg-white/90");
+    header.classList.remove("bg-white/90", "backdrop-blur", "shadow-md");
+    header.classList.add("bg-white/70");
   }
 });
 const form = document.querySelector("form");

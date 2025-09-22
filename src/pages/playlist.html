@@ -7,13 +7,15 @@
     <title>Melodia - Playlist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://w.soundcloud.com/player/api.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="font-[Poppins] bg-gray-50 text-gray-800">
     <header class="fixed top-0 w-full bg-white/70 backdrop-blur-lg shadow-md z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <h1><a href="../../index.html" class="text-2xl font-bold text-indigo-600">Melodia</a></h1> 
+            <h1><a href="../../index.html" class="text-2xl font-bold text-indigo-600">Melodia</a></h1>
             <nav>
                 <ul class="flex gap-6 font-medium">
                     <li><a href="../../index.html" class="font-bold hover:text-indigo-600">Home</a></li>
@@ -26,26 +28,38 @@
                 </ul>
             </nav>
         </div>
-        <main class="container mx-auto p-6">
-            <!-- Lista de músicas disponíveis -->
-            <section>
-                <h2 class="text-xl font-semibold mb-4">Músicas disponíveis</h2>
-                <ul id="music-list" class="grid md:grid-cols-2 gap-6">
-                    <!-- Cada item terá botão "Adicionar" -->
-                </ul>
-            </section>
+    </header>
+    <section id="music" class="container mx-auto">
+        <h3 class="text-6xl font-bold text-center font-[Poppins]">Músicas</h3>
+    </section>
+    <main class="container mx-auto p-6">
 
-            <hr class="my-8">
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Músicas disponíveis</h2>
+            <ul id="music-list" class="grid md:grid-cols-2 gap-6">
 
-            <!-- Playlist -->
-            <section>
-                <h2 class="text-xl font-semibold mb-4">Sua Playlist</h2>
-                <div id="playlist" class="space-y-6">
-                    <p class="text-gray-500">Nenhuma música adicionada ainda.</p>
-                </div>
-            </section>
-        </main>
+            </ul>
+        </section>
 
-        <script src="../js/script.js"></script>
+        <hr class="my-8">
+
+
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Sua Playlist</h2>
+            <div id="playlist" class="space-y-6">
+                <p class="text-gray-500">Nenhuma música adicionada ainda.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <p>&copy; 2025 Melodia | Todos os direitos reservados</p>
+        <div class="flex justify-center space-x-6 mt-3">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <a class="block mt-3 text-sm hover:text-white">Política de Privacidade</a>
+    </footer>
+    <script src="../js/script.js"></script>
 
 </html>
